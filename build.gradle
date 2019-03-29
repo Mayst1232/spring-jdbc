@@ -6,6 +6,12 @@ repositories {
     jcenter()
 }
 
+compileJava {
+    options.encoding = "UTF-8"}
+
+javadoc {
+    options.encoding = "UTF-8"}
+
 dependencies {
 	// junit for test
 	implementation 'junit:junit:4.+'
