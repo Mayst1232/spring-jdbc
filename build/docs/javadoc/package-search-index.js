@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.hkj.jdbc.chap03"},{"l":"com.hkj.jdbc.example"},{"l":"com.hkj.jdbc.spring"}]
