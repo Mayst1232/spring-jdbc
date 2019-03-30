@@ -16,7 +16,11 @@ public class MemberMain {
 	public static void main(String[] args) {
 		MemberDao memberDao = new MemberDao();
 		MemberRegisterService regService = new MemberRegisterService();
-		regService.setMemberDao(memberDao);
+		regService.setMemberDao(memberDao); 
+		
+		/* ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap03.xml");
+		MemberRegisterService regService = ctx.getBean("memberRegisterService", com.hkj.jdbc.chap03.MemberRegisterService.class);
+		*/
 
 		// registerRequest 초기화
 		RegisterRequest req = new RegisterRequest();
