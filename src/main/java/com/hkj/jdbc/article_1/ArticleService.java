@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * 
  * @author Jacob
  */
-@Service
+@Service("articleService")
 public class ArticleService {
 	@Autowired
 	ArticleDao articleDao;
@@ -43,7 +43,7 @@ public class ArticleService {
 		article.setTitle("해리포터는 제가 제일 좋아하는 영화 1순입니다.");
 		article.setContent(
 				"해리포터는 항상 신선하고 재미있는 영화였습니다.");
-		article.setUserId("69");
+		article.setUserId("25");
 		article.setName("황규정");
 		if (articleDao.addArticle(article) > 0)
 			System.out.println("글을 추가했습니다.");

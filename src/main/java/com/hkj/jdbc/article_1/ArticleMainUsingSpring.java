@@ -13,11 +13,12 @@ public class ArticleMainUsingSpring {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(
 				"article_1.xml");
-		ArticleService articleService = context.getBean("articleService",
+		ArticleService articleService = context.getBean("articleService", 
 				ArticleService.class);
 		context.close();
 
 		articleService.addArticle();
+		articleService.listArticles();
 
  	}
 
