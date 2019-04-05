@@ -10,6 +10,8 @@ import com.hkj.jdbc.chap03.Member;
  * 
  * @author Jacob
  */
+
+@R
 public interface MemberDao {
 
 	/**
