@@ -14,13 +14,13 @@ import com.hkj.jdbc.example.ArticleService;
 public class MemberMain {
 
 	public static void main(String[] args) {
-		MemberDao memberDao = new MemberDao();
-		MemberRegisterService regService = new MemberRegisterService();
-		regService.setMemberDao(memberDao); 
+		//MemberDao memberDao = new MemberDao();
+		//MemberRegisterService regService = new MemberRegisterService();
+		//regService.setMemberDao(memberDao);
 		
-		/* ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap03.xml");
-		MemberRegisterService regService = ctx.getBean("memberRegisterService", com.hkj.jdbc.chap03.MemberRegisterService.class);
-		*/
+		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap03.xml");
+		MemberRegisterService regService = ctx.getBean("memberRegisterService", MemberRegisterService.class);
+		
 
 		// registerRequest 초기화
 		RegisterRequest req = new RegisterRequest();
