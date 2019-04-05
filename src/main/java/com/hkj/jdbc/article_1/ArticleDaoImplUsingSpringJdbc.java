@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 /**
  * Spring JDBC를 사용해서 ArticleDao를 구현
  * 
  * @author Jacob
  */
+@Repository("articleDao")
 public class ArticleDaoImplUsingSpringJdbc implements ArticleDao {
 	/**
 	 * 목록 가져오는 sql
@@ -65,6 +67,7 @@ public class ArticleDaoImplUsingSpringJdbc implements ArticleDao {
 	 */
 	@Override
 	public int addArticle(Article article) {
+		
 		return jdbcTemplate.update(ADD_ARTICLE, article.getTitle(),
 				article.getContent(), article.getUserId(), article.getName());
 	}

@@ -2,15 +2,19 @@ package com.hkj.jdbc.article_1;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 /**
  * articleDao를 사용해서 글 목록, 조회, 추가, 수정, 삭제를 한다.
  * 
  * @author Jacob
  */
+@Service
 public class ArticleService {
-
+	@Autowired
 	ArticleDao articleDao;
-
+	
 	public void setArticleDao(ArticleDao articleDao) {
 		this.articleDao = articleDao;
 	}
@@ -36,7 +40,7 @@ public class ArticleService {
 	 */
 	public void addArticle() {
 		Article article = new Article();
-		article.setTitle("해리포터는 제가 제일 좋아하는 영화입니다.");
+		article.setTitle("해리포터는 제가 제일 좋아하는 영화 1순입니다.");
 		article.setContent(
 				"해리포터는 항상 신선하고 재미있는 영화였습니다.");
 		article.setUserId("69");

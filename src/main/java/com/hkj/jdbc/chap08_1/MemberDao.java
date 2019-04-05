@@ -2,6 +2,8 @@ package com.hkj.jdbc.chap08_1;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.hkj.jdbc.chap03.Member;
 
 /**
@@ -11,7 +13,6 @@ import com.hkj.jdbc.chap03.Member;
  * @author Jacob
  */
 
-@R
 public interface MemberDao {
 
 	/**

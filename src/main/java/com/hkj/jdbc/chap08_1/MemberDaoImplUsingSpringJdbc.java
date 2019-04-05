@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import com.hkj.jdbc.chap03.Member;
 
@@ -13,6 +14,7 @@ import com.hkj.jdbc.chap03.Member;
  * 
  * @author Jacob
  */
+@Repository("memberDao")
 public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 
 	static final String SELECT_BY_EMAIL = "SELECT memberId, email, name FROM member WHERE email=?";

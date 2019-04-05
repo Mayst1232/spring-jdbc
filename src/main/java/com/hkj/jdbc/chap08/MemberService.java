@@ -13,7 +13,6 @@ import com.hkj.jdbc.chap03.Member;
  * 
  * @author Jacob
  */
-@Service
 public class MemberService {
 
 	Logger logger = LogManager.getLogger();

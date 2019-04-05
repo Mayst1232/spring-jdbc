@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.hkj.jdbc.chap03.Member;
 
@@ -12,8 +14,10 @@ import com.hkj.jdbc.chap03.Member;
  * 
  * @author Jacob
  */
+@Service("memberService")
 public class MemberService {
-
+	
+	@Autowired
 	Logger logger = LogManager.getLogger();
 
 	MemberDao memberDao = null;

@@ -37,3 +37,33 @@ task runSpringMain(type: JavaExec) {
 	main = 'com.hkj.jdbc.spring.Main2'
 	classpath =  sourceSets.main.runtimeClasspath
 }
+
+task runMemberMain(type: JavaExec) {
+	main = 'com.hkj.jdbc.chap03.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingSpring(type: JavaExec) {
+	main = 'com.hkj.jdbc.chap03.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runMemberMainUsingComponentScan(type: JavaExec) {
+	main = 'com.hkj.jdbc.chap04.MemberMainUsingComponentScan'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runChap08MemberMain(type: JavaExec) {
+	main = 'com.hkj.jdbc.chap08.MemberMain'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runChap08MemberMainUsingSpring(type: JavaExec) {
+	main = 'com.hkj.jdbc.chap08.MemberMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
+task runArticleMainUsingSpring (type: JavaExec) {
+	main = 'com.hkj.jdbc.spring.ArticleMainUsingSpring'
+	classpath =  sourceSets.main.runtimeClasspath
+}
