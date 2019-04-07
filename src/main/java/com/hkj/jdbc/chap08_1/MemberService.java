@@ -17,9 +17,10 @@ import com.hkj.jdbc.chap03.Member;
 @Service("memberService")
 public class MemberService {
 	
-	@Autowired
+	
 	Logger logger = LogManager.getLogger();
-
+	
+	@Autowired
 	MemberDao memberDao = null;
 
 	/**
